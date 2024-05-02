@@ -1,11 +1,11 @@
 public class RewardValue {
 
     double cash;
-    String mile;
+    int mile;
     public RewardValue(double cashValue) {
         cash=cashValue;
     }
-    public RewardValue(String mileValue){
+    public RewardValue(int mileValue){
         mile = mileValue;
     }
     public double getMilesValue() {
@@ -14,7 +14,7 @@ public class RewardValue {
     }
 
     public double getCashValue() {
-        return  cash;
+        return  mile*0.0035;
     }
 }
 
